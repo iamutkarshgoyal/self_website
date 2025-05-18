@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Profile</title>
+
+  <link href="{{ url_for('static', path='education_styles.css') }}" rel="stylesheet" />
+</head>
+
+<body>
+  <script src="{{ url_for('static', path='node.js') }}"></script>
+
+  <div class="navbar">
+    <div class="nav-item">
+      <img src="{{ url_for('static', path='Images/home-smile-svgrepo-com.svg') }}" alt="Home Image" />
+      <a href="/home">Home</a>
+    </div>
+    <div class="nav-item">
+      <img src="{{ url_for('static', path='Images/education-svgrepo-com.svg') }}" alt="Education Image" />
+      <a href="/education">Education</a>
+    </div>
+    <div class="nav-item">
+      <img src="{{ url_for('static', path='Images/user-plus-svgrepo-com.svg') }}" alt="Experience Image" />
+      <a href="/experience">Experience</a>
+    </div>
+    <div class="nav-item">
+      <img src="{{ url_for('static', path='Images/task-svgrepo-com.svg') }}" alt="Projects Image" />
+      <a href="/projects">Projects</a>
+    </div>
+    <div class="nav-item">
+      <img src="{{ url_for('static', path='Images/resume-business-cv-work-job-curriculum-2-svgrepo-com.svg') }}" alt="Resume Image" />
+      <a href="/resume">Download</a>
+    </div>
+  </div>
+
+  <div class="About">
+    <img src="{{ url_for('static', path='Images/Utkarsh.jpg') }}" alt="Utkarsh Image" width="200" height="200" />
+    <h2>Utkarsh Goyal | Software Engineer</h2>
+    <p class="value">
+      Education and Certificates
+    </p>
+  </div>
+
+  <div class="description">
+    <img src="{{ url_for('static', path='Images/scaler.png') }}" alt="Scaler Image" width="20" height="20"/>
+    <h1>Data Science | Machine Learning @Scaler</h1>
+  </div>
+</body>
+</html>

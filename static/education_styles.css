@@ -1,0 +1,128 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(241, 210, 245);
+}
+.navbar {
+    border-radius: 2px;
+    max-width: 800px;
+    margin-top: 2%;
+    margin-right: 3%;
+    margin-left: 58%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+  }
+  
+  .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .nav-item:hover {
+    transform: scale(1.1);
+  }
+  
+  .nav-item img {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5px;
+    transition: filter 0.1s ease;
+  }
+  
+  .nav-item img:hover {
+    filter: brightness(2) saturate(3.5);
+  }
+  
+  .nav-item a {
+    color: #5c1605;
+    font-size: 15px;
+    text-decoration: none;
+  }
+  
+  .nav-item a:hover {
+    color: #5c1605;
+  }
+  
+
+.About {
+    font-style: normal;
+    margin-top: 5%;
+    position: relative;
+  }
+
+.About h2{   
+    width: 50%;
+    margin-left: 30%;
+    margin-right: 5%;
+    margin-top: 5%;
+    position: absolute;
+    white-space: nowrap;
+    font-size: 2rem;
+    animation: slide 2s backwards;
+}
+
+@keyframes slide{
+    0% {
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX((-100%));
+    }
+}
+
+.About img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    position: absolute;
+    top: 1px;
+    left: 100px;
+}
+
+.About p{
+    width: 70%;
+    margin-left: 30%;
+    margin-right: 5%;
+    margin-top: 10%;
+    border-right: 3px solid #010e11;
+    position: absolute;
+    white-space: nowrap;
+    font-size: 20px;
+    overflow: hidden;
+    animation: typing 4s steps(30,end), blink-caret 0.75s step-end infinite;
+    animation-delay: 3s;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #61dafb;
+    }
+}
+
+.description{
+    margin-left: 5%;
+    margin-top: 20%;
+    font-size: 20px;
+    position: absolute;
+}
+
